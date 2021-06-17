@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+    background-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #F7F9FB;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: white;
+}
+nav{
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.212);
+}
+nav h2{
+    float: left;
+    padding: 20px 10px;
+    font-family: math, monospace;
+    font-size: 100%; 
+}
+nav ul{
+    float: right;
+    display: inline;
+    margin-right: 10px;
+}
+nav ul li{
+    text-decoration: none;
+    list-style: none;
+    display: inline;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #F7F9FB;
+}
+nav ul li a i{
+    font-size: 25px;
+    margin: 17.5px 5px;
+}
+#more{
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    transition: .4s;
+    background-color: rgba(255, 255, 255, 0.959);
+    float: right;
+    border-radius: 10%;
+    margin: 5px;
+}
+#more:hover{
+    height: 200px;
+    border-radius: 1%;
+}
+#more button{
+    background: none;
+    border: none;
+    width: 100%;
+    height: 50px;
+}
+#more button i{
+    font-size: 30px;
+    cursor: pointer;
+}
+#more button i:hover{
+    font-size: 35px;
+}
+.Content{
+    margin: 0 auto;
+    background: rgb(0, 0, 0);
+    position: relative;
+}
+
+.Title{
+    width: fit-content;
+    margin: auto;
+}
+#Wellcome{
+    border-radius: 0;
+    height: 700px;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 100px;
+    color: #F7F9FB;
+    background-image: url("img/background5.jpg");
+}
+#Wellcome h1{
+    font-family: 'Zen Dots', cursive;
+    background-color: #0000001a;
+}
+#Wellcome ul{
+    border-left: 2px solid white;
+    text-align: left;
+    font-size: 30px;
+    list-style: none;
+    text-decoration: none;
+    display: block;
+    
+}
+#Wellcome ul li{
+    background-color: transparent;
+    border-radius: 15px;
+    margin-left: 2px;
+    text-align: left;
+    width: 250px;
+    margin-bottom: 20px;
+    position: relative;
+}
+#Wellcome ul li a{
+    text-decoration: none;
+    color: #F7F9FB;
+    font-size: 45px;
+    width: 245px;
+    display: inline-block;
+    margin-left: 15px;
+    font-family: 'Quicksand', sans-serif;   
+}
+#Wellcome ul li a:hover{
+    margin-left: 30px;
+    -o-transition-delay: .5s;
+}
+#PersonalNav{
+    margin-left: 8.7%;
+    float: left;
+    display: inline-block;
+}
+#PersonalImg{
+    width: 150px;
+    height: 150px;
+    padding-left: 10px;
+    border-left: 2px solid white;
+}
+#PersonalImg img{
+    border-radius: 50%;
+}
+#PersonalDescription{
+    width: 200px;
+    height: auto;
+    display: inline-block;
+    float: right;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    background: #0000009e;
+    padding: 10px 20px;
+    margin-right: 8.7%;
+    margin-top: 20px;
+}
+#PersonalDescription h3{
+    border-bottom: 1px whitesmoke solid;
+    margin-bottom: 5px;
+}
+#PersonalDescription p{
+    margin-bottom: 0;
+}
+#Education{
+    width: 100%;
+    height: 800px;
+    position: relative;
+    background-image: url("img/background2.jpg");
+    background-position: bottom;
+}
+#EducationContent{
+    width: 800px;
+    height: 500px;
+    margin: 0 auto;
+    padding: 150px 0;
+}
+#UniversityCard{
+    width: 300px;
+    min-width: 300px;
+    height: 500px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.959);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: inline-block;
+    float: left;
+    z-index: 1;
+}
+#UniversityImg{
+    width: 100%;
+    height: 250px;
+}
+#UniversityImg img{
+    width: 100%;
+    height: 250px;
+}
+#UniversityLogo{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 175px;
+    left: 75px;
+}
+#UniversityLogo img{
+    width: 100%;
+    border-radius: 50%;
+}
+#University{
+    padding-top: 90px;
+    height: auto;
+}
+#University h2,#University h3,#University h4,#University p{
+    text-align: center;
+    margin-bottom: 6px;
+    font-family: 'Quicksand', sans-serif;
+}
+#UniversityDescription{
+    width: 500px;
+    height: auto;
+    padding: 75px 0;
+    background-clip: content-box;
+    background-color: #eeeeee7d;
+    color: black;
+    float: left;
+    overflow: hidden;
+}
+#UniversityDescription p{
+    min-width: 400px;
+    padding: 43px;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+#skills{
+    color: black;
+    text-align: none;
+    width: 100%;
+    font-family: 'Quicksand', sans-serif; 
+    height: 400px;   
+}
+#skills h1{
+    text-align: center;
+    margin-top: 50px;
+}
+#skills li{
+    list-style: none;
+    margin: 20px 0;
+}
+.skillBox{
+    width: 35%;
+    display: inline-block;
+    padding: 30px 7%;
+    float: left;
+}
+.bar{
+    background-color: #222629;
+    display: block;
+    height: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 5spx #474b4f;
+}
+.bar span{
+    height: 6px;
+    float: left;
+    background-color: #86c232;
+}
+#javaBar{
+    width: 70%;
+}
+#pythonBar{
+    width: 50%;
+}
+#csBar{
+    width: 60%;
+}
+#htmlBar{
+    width: 80%;
+}
+#cssBar{
+    width: 60%;
+}
+#androidBar{
+    width: 60%;
+}
+#android h3{
+    min-width: 200px;
+}
+#jsBar{
+    width: 50%;
+}
+#unityBar{
+    width: 50%;
+}
+
+#Footer{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(19, 19, 19);
+    text-align: center;
+}
+#FooterContent {
+    padding: 50px 0;
+    margin: 0 auto;
+    width: 500px;
+    height: 200px;
+}
+#FooterContent h3{
+    padding-top: 30px;
+}
+@media only screen and (max-width: 850px){
+    #EducationContent{
+        width: 80%;
+    }
+    #UniversityCard{
+        width: 32.66%;
+        height: 400px;
+        min-width: 32.66%;
+    }
+    
+    #UniversityImg{
+        height: 200px;
+    }
+    #UniversityImg img{
+        height: 200px;
+    }
+    #UniversityLogo{
+        width: 50%;
+        height: 100px;
+        top: 150px;
+        left: 25%;
+    }
+    #University{
+        padding-top: 25%;
+        height: auto;
+    }
+    #UniversityDescription{
+        width: 67%;
+        padding: 43px 0;
+    }
+    #UniversityDescription p{
+        width: none;
+        min-width: 300px;
+        padding: 4%;
+        font-size: 100%;
+    }
+}
+@media only screen and (max-width: 600px){
+    .Title h1{
+        font-size: 80%;
+    }
+    #UniversityDescription p{
+        min-width: 270px;
+        font-size: 80%;
+    }
+    #FooterContent{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 550px){
+    #University{
+        padding-top: 10%;
+    }
+    #UniversityDescription p{
+        min-width: 230px;
+        font-size: 70%;
+    }
+}
+@media only screen and (max-width: 450px){
+    nav h2{
+        font-size:80%;
+    }
+    #University h2,#University h3,#University h4,#University p{
+        font-size: 15px;
+    }
+    #UniversityDescription p{
+        min-width: 150px;
+        font-size: 50%;
+    }
+}            
+@media only screen and (min-width: 2000px){
+    
+    .Content .Description p{
+        font-size: 180%;
+    }
+    .Content  p{
+        font-size: 180%;
+    }
+    .Footer{
+        font-size: 180%;
+    }
+}
+
+
+
+
+
+
+
+.PageLink{
+    position: absolute;
+}
+#WAI_H2{
+    margin-right: 25%;
+}
+
+.UpPage{
+    background-color: #0b0c10a4;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    right: 10px;
+    bottom: 10px;
+    position: fixed;
+}
+.UpPage button{
+    background: none;
+    border: none;
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+}
+.UpPage button i{
+    font-size: 50px;
+    color: white;
+}
+.clearfix {
+    overflow: auto;
+}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.background{
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+img{
+    width: 100%;
+}
+.DescriptionImg{
+    border-radius: 50%;
+    overflow: hidden;
+    width: 23%;
+    position: relative;
+    height: auto;
+    float: left;
+    shape-outside: circle();
+    margin : 2%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.InterestImg{
+    border-radius: 30%;
+    width: 23%;
+    height: auto;
+    position: relative;
+    shape-outside: circle();
+    margin : 2%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.BoxShadow1{
+    box-shadow: 0 4px 8px 0 #c9eaff, 0 6px 20px 0 #c9eaff;
+    transition: .6s;
+}
+.BoxShadow1:hover{
+    box-shadow: 0 4px 30px 10px #c9eaff, 0 6px 20px 0 #c9eaff;
+}
+.TextColor1{
+    color: #F7F9FB;
+}
+.TextColor2{
+    color: #0b0c10;
+}
+.BackColor1{
+    background-color: #F7F9FB;
+}
+.BackColor2{
+    background-color: #0b0c10;
+}
+.BackColor3{
+    background-color: #8FC1E3;
+}
+.BackColor4{
+    background-color:#8fc1e324;
+}

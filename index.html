@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HARUNLUK Blog Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1227f01f07.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Zen+Dots&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <script> 
+        $(document).ready(function(){
+            $("nav").animate({height:'0'},1)
+            $("nav").animate({height:'60px'},1000)
+            $("#PersonalImg img").hide(1)
+            $("#PersonalNav ul li").hide(1)
+            $("#PersonalDescription").fadeOut(1)
+            $("#PersonalImg").animate({height:'0'},1).animate({height:'150px'},1000)
+            $("#PersonalImg img").show(1000)
+            $("#PersonalDescription").fadeIn(1000)
+            $("#PersonalNav ul").animate({height:'0'},1).animate({height:"132px"},1000,function () {
+                $("#PersonalNav ul li").animate({left:'-100px'},1).show(1).animate({left:'15px'},500)
+            })
+            $(".Title").fadeOut(1);
+            $(".Title").fadeIn(2000);
+            
+            var skillScroll = false
+            var educationScroll = false
+            var skillAnimTime=1000;
+            $("#java").css("width","0")
+            $("#python").css("width","0")
+            $("#cs").css("width","0")
+            $("#js").css("width","0")
+            $("#html").css("width","0")
+            $("#css").css("width","0")
+            $("#android").css("width","0")
+            $("#unity").css("width","0")
+            $("#UniversityDescription").fadeOut(1)
+            $("#UniversityDescription").css("width","0")
+            $("#UniversityCard").css("left","250px")
+            $(window).scroll(function () {
+                var scroll = $(window).scrollTop()
+                if(scroll>$("#skills").scrollTop()+200 && !skillScroll){
+                    
+                    $("#java").animate({width:'100%'},skillAnimTime)
+                    skillAnimTime+=200
+                    $("#python").animate({width:'100%'},skillAnimTime)
+                    skillAnimTime+=200
+                    $("#cs").animate({width:'100%'},skillAnimTime)
+                    skillAnimTime+=200
+                    $("#js").animate({width:'100%'},skillAnimTime)
+                    skillAnimTime+=200
+                    $("#html").animate({width:'100%'},skillAnimTime)
+                    skillAnimTime+=200
+                    $("#css").animate({width:'100%'},skillAnimTime)
+                    skillAnimTime+=200
+                    $("#android").animate({width:'100%'},skillAnimTime)
+                    skillAnimTime+=200
+                    $("#unity").animate({width:'100%'},skillAnimTime)
+                    skillScroll=true
+                }
+                if(scroll>$("#Education").scrollTop()+700 && !educationScroll){
+                    
+                    $("#UniversityDescription").fadeIn(1000)
+                    if($(window).width()<850){
+                        $("#UniversityDescription").animate({width:"67%"},1000)
+                    }else{
+                        $("#UniversityDescription").animate({width:"500px"},1000)
+                    }
+                    $("#UniversityCard").animate({left:"0"},1000)
+                    educationScroll=true
+                }
+            })
+        });
+        $(window).resize(function () {
+            if($(window).width()<850){
+                $("#UniversityDescription").css("width","67%")
+            }else{
+                $("#UniversityDescription").css("width","500px")
+            }
+        });
+        
+    </script> 
+</head>
+<body>
+    <nav>
+        <h2>Wellcome To My Personal Website</h2>
+        <div id="more" style="display: none;">
+            <button>
+                <i class="fas fa-bars TextColor2"></i>
+            </button>
+            <button>
+                <i class="fas fa-bars TextColor2"></i>
+            </button>
+            <button>
+                <i class="fas fa-bars TextColor2"></i>
+            </button>
+            <button>
+                <i class="fas fa-bars TextColor2"></i>
+            </button>
+        </div>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/harun-şerli-40b7ab1b3/"><i class="fab fa-linkedin-in"></i></a></li>
+        </ul>
+    </nav>
+    <header id="Wellcome" class="background">
+        <div class="Title">
+            <h1>HARUNLUK</h1>
+        </div>
+        <div id="PersonalNav">
+            <div id="PersonalImg">
+                <img src="img/perspic.jpg" alt="">
+            </div>
+            <ul>
+                <li><a href="#LinkSkills">Skills</a></li>
+                <li><a href="#LinkEducation">Education</a></li>
+            </ul>
+        </div>
+        <div id="PersonalDescription">
+            <h3>Who Am I</h3>
+            <p>My name is Harun Şerli.</p>
+            <p> I am third year Software Engineering student at Fırat University. I studying about Android Studio Development, Web Development, Unity Game Development, CS50 Introduction to ArtificiaI Intelligence and Programming Languages<br> ( Java, C#, Python ). </p>  
+        </div>
+    </header>
+    <div id="skills">
+        <div class="PageLink" id="LinkSkills"></div>
+        <h1>My Skills</h1>
+        <div class="skillBox">
+            <li id="java"><h3>Java</h3><span class="bar"><span id="javaBar"></span></span></li>
+            <li id="cs"><h3>C#</h3><span class="bar"><span id="csBar"></span></span></li>
+            <li id="html"><h3>html</h3><span class="bar"><span id="htmlBar"></span></span></li>
+            <li id="android"><h3>Android Studio</h3><span class="bar"><span id="androidBar"></span></span></li>
+        </div>
+        <div class="skillBox">
+            <li id="python"><h3>Python</h3><span class="bar"><span id="pythonBar"></span></span></li>
+            <li id="js"><h3>JavaScript</h3><span class="bar"><span id="jsBar"></span></span></li>
+            <li id="css"><h3>CSS</h3><span class="bar"><span id="cssBar"></span></span></li>
+            <li id="unity"><h3>Unity</h3><span class="bar"><span id="unityBar"></span></span></li>
+       </div>
+    </div>
+    <div id="Education" class="background TextColor1">
+        <div class="PageLink" id="LinkEducation"></div>
+        <div id="EducationContent">
+            <div id="UniversityCard" class="BackColor1 TextColor2">
+                <div id="UniversityImg">
+                    <img src="img/firatcampus.jpg" alt="">
+                </div>
+                <div id="UniversityLogo">
+                    <img src="img/firaticon.jpg" alt="">
+                </div>
+                <div id="University" >
+                    <h2>Fırat University</h2>
+                    <h4>Technology Facility</h4>
+                    <h3>Software Engineering</h3>
+                    <p><i>2018-....</i></p>
+                </div>
+            </div>
+            <div id="UniversityDescription">
+                <p>Our study focuses on: - Learning existing theories, models and techniques for software design, development implementation and validation and using them to solve engineering problems. To learn to work effectively in software development environments. To know how to take responsibility in project management. The topics I learned at my university are algorithms with Java, OOP with C #, Software Project management, Data Structures, MySql, Web Design, Functional Programming, Data Mining.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div id="Footer">
+        <div id="FooterContent">
+            <h3>Phone Number:</h3>
+            <p>+90 534 790 97 71</p>
+            <h3>E-Mail</h3>
+            <i>harunserli@gmail.com</i>
+        </div>
+    </div>
+    
+
+    <div class="UpPage">
+        <button>
+            <a href="#"><i class="fas fa-angle-up"></i></a>
+        </button>
+    </div>
+</body>
+</html>
